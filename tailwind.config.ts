@@ -15,8 +15,8 @@ const config: Config = {
       },
       colors: {
         "primary": "#2b891c",
-        "secondary": "#CCCCCC"
-      }
+        "softGreen": "#d4ffc7",
+      },
     },
   },
   plugins: [],
