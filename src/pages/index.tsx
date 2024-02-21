@@ -1,15 +1,17 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
+import LandingHome from "@/subsets/LandingHome";
+import LandingInformation from "@/subsets/LandingInformation";
+import Footer from "@/components/footer/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <div className="w-screen h-[80vh] bg-white flex flex-row">
-      <div className="w-3/5 h-full bg-green-500"></div>
-      <div className="w-2/5 h-full bg-black">
-        <p className="text-softGreen">from the daylight</p>
-      </div>
+    <div className="w-screen h-auto bg-white flex flex-col">
+      <LandingHome />
+      <LandingInformation />
+      <Footer />
     </div>
   );
 }
